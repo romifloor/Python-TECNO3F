@@ -13,7 +13,7 @@ def encontrar_mayor():
         finally:
             print("Cálculo finalizado.\n")
 
-        repetir = input("¿Desea comparar otros dos números? (s/n): ")
+        repetir = input("¿Desea comparar otros dos números? (s/n): ").strip().lower()
         if repetir != 's':
             print("Programa terminado.")
             break

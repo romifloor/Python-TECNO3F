@@ -5,7 +5,7 @@ def buscar_palabra(*args):
         try:
             palabra = input("Ingrese la palabra que desea buscar: ").strip()
             if not palabra:
-                raise ValueError("Debe ingresar una palabra.")
+                raise ValueError("La palabra no puede estar vacía.")
         except ValueError as e:
             print(f"Error: {e}")
         else:
